@@ -1,0 +1,523 @@
+{
+	"info": {
+		"_postman_id": "4672eb26-8e49-4ff8-95d9-ddd4c8dfbaeb",
+		"name": "Teste API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "Visualizar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categorias",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Exibir",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categorias/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categorias",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Alimentos\",\r\n    \"descricao\": \"Lorem ipsum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/categorias",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Token",
+								"description": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDM4MzUwLCJleHAiOjE2MjMwNDE5NTB9.G4i9jm6Fau--hCRTirhiWyh4DnfaTclBRCokFzRkOvk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Limpeza\",\r\n    \"descricao\": \"Dolor sit amet\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/categorias/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categorias",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/categorias/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categorias",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "Visualizar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/produtos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Exibir",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/produtos/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"produtos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nome",
+									"value": "Biscoito",
+									"type": "text"
+								},
+								{
+									"key": "preco",
+									"value": "2.05",
+									"type": "text"
+								},
+								{
+									"key": "imagem",
+									"type": "file",
+									"src": "/C:/Users/thaizacristina/Desktop/Coisas/download.jpg"
+								},
+								{
+									"key": "idCategoria",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/produtos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Biscoito de Povilho\",\r\n    \"preco\": 1.10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/produtos/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"produtos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/produtos/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "Visualizar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/pedidos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Exibir",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pedidos/2?Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pedidos",
+								"2"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProduto\": 3,\r\n    \"quantidade\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/pedidos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pedidos/2?Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pedidos",
+								"2"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuários",
+			"item": [
+				{
+					"name": "Visualizar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/usuarios",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"teste@gmail.com\",\r\n    \"senha\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/usuarios",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/usuarios/2?Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"usuarios",
+								"2"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJ0ZXN0ZTJAZ21haWwuY29tIiwiaWF0IjoxNjIzMDU0NTY4LCJleHAiOjE2MjMwNTgxNjh9.SJwIk7eMT3kyaQ-b1Shm7RoqyTRpfQ_drgr50GFLJUg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"teste2@gmail.com\",\r\n    \"senha\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/usuarios/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:3000"
+		}
+	]
+}
