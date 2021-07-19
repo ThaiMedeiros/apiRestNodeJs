@@ -67,6 +67,7 @@
 </div>
 
 - Esse projeto foi desenvolvido com as seguintes tecnologias:
+  - JavaScript;
   - MySQL;
   - Node.JS.
 
