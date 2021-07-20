@@ -85,10 +85,10 @@
 
 ```bash
 # clonando o projeto na sua maquina
-$ git clone https://github.com/ThaiMedeiros/apiRestNodeJs.git
+$ git clone https://github.com/ThaiMedeiros/apirest-nodejs.git
 
 # entre na pasta do projeto
-$ cd apiRestNodeJs
+$ cd apirest-nodejs
 
 # instale as dependências através do comando:
 $ `npm install`
